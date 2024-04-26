@@ -2,12 +2,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     font-family: "Raleway";
 }
 
@@ -24,8 +24,14 @@ body{
 }
 
 /* Banner style */
-.banner-img{
+.banner-img {
     background-image: url(/images/banner.png);
     background-repeat: no-repeat;
     background-size: 100%;
+}
+
+/* small-cart-box */
+.small-cart-box {
+    bottom: -9%;
+    right: 19%
 }
