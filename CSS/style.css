@@ -25,7 +25,7 @@ body {
 
 /* Banner style */
 .banner-img {
-    background-image: url(images/banner.png);
+    background-image: url(/images/banner.png);
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -34,4 +34,14 @@ body {
 .small-cart-box {
     bottom: -9%;
     right: 19%
+}
+
+/* text-18px */
+.text-18px{
+    font-size: 18px;
+}
+/* image-fluide */
+.image-fluide{
+    max-width: 100%;
+    height: auto;
 }
