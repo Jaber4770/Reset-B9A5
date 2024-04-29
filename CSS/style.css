@@ -45,3 +45,12 @@ body {
     max-width: 100%;
     height: auto;
 }
+.w-100px{
+    width: 150px;
+}
+.me-10px{
+    margin-right: 10px;
+}
+.w-50px{
+    width: 0px;
+}
