@@ -16,7 +16,7 @@
 
 <body>
 
-    <header class="container mx-auto relative">
+    <header class="container mx-auto">
         <!-- Navbar -->
         <div class="navbar bg-base-100 mb-8 mt-5">
             <div class="navbar-start">
@@ -30,68 +30,72 @@
                     </div>
                     <ul tabindex="0"
                         class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                        <li><a>Home</a></li>
-                        <li><a>About</a></li>
-                        <li><a>Destination</a></li>
-                        <li><a>Search</a></li>
+                        <li class="font-medium"><a>Home</a></li>
+                        <li class="font-medium"><a>About</a></li>
+                        <li class="font-medium"><a>Destination</a></li>
+                        <li class="font-medium"><a>Search</a></li>
                     </ul>
                 </div>
-                <a class="btn btn-ghost text-xl">TicketSwift</a>
+                <a class="btn btn-ghost text-4xl font-extrabold">TicketSwift</a>
             </div>
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal px-1">
-                    <li><a>Home</a></li>
-                    <li><a>About</a></li>
-                    <li><a>Destination</a></li>
-                    <li><a>Search</a></li>
+                    <li class="font-medium"><a>Home</a></li>
+                    <li class="font-medium"><a>About</a></li>
+                    <li class="font-medium"><a>Destination</a></li>
+                    <li class="font-medium"><a>Search</a></li>
                 </ul>
             </div>
             <div class="navbar-end">
-                <a class="btn">Bus <img src="images/bus-icon.png" alt=""> </a>
+                <a class="btn text-[#1DD100] font-bold border-2 border-[#1DD100] bg-[#1cd10038]">Bus <img
+                        src="images/bus-icon.png" alt=""> </a>
             </div>
         </div>
         <!-- Banner -->
-        <div class="banner-img">
-            <div class="pb-52">
-                <h1 class="text-white text-8xl font-bold text-center pt-28 pb-14">End-to-End Travel With <br> <span
-                        class="text-[#1DD100]">P Paribahan</span></h1>
-                <p class="text-white text-center text-3xl pb-10">Get where you need to go with ease! TicketSwift -
-                    <br>your hassle-free solution for all your transportation needs.
-                </p>
-                <div class="">
-
-                    <button class="py-3 px-5 rounded-lg bg-[#1DD100] font-bold text-2xl block mx-auto">Buy
-                        Ticket</button>
-                </div>
-            </div>
-        </div>
-        <!-- small cart -->
-        <div class="absolute small-cart-box">
-            <div class="mb-5 flex gap-10">
-                <div class="border-[#1DD100] border-b-4 rounded-2xl px-11 py-5 bg-white">
-                    <div class="flex gap-4 items-center">
-                        <img src="images/people.png" alt="">
-                        <div>
-                            <h1 class="text-5xl font-bold pb-2">500K+</h1>
-                            <span class="text-gray-500">Registered users</span>
-                        </div>
+        <div class="">
+            <div class="image-container relative">
+                <div class="pb-40">
+                    <h1 class="text-white text-6xl font-bold text-center pt-28 pb-14">End-to-End Travel With</h1>
+                    <h1 class="text-[#1DD100] text-6xl font-bold text-center pb-14">P Paribahan</h1>
+                    <p class="text-white text-center text-2xl pb-10">Get where you need to go with ease! TicketSwift -
+                        <br>your hassle-free solution for all your transportation needs.
+                    </p>
+                    <div class="py-5">
+                        <button class="py-3 px-5 mb-16 rounded-lg bg-[#1DD100] font-bold text-2xl block mx-auto">Buy
+                            Ticket</button>
                     </div>
                 </div>
-                <div class="border-[#1DD100] border-b-4 rounded-2xl px-11 py-5 bg-white">
-                    <div class="flex gap-4 items-center">
-                        <img src="images/ticket-cupon.png" alt="">
-                        <div>
-                            <h1 class="text-5xl font-bold pb-2">500K+</h1>
-                            <span class="text-gray-500">Registered users</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="border-[#1DD100] border-b-4 rounded-2xl px-11 py-5 bg-white">
-                    <div class="flex gap-4 items-center">
-                        <img src="images/stoppage.png" alt="">
-                        <div>
-                            <h1 class="text-5xl font-bold pb-2">500K+</h1>
-                            <span class="text-gray-500">Registered users</span>
+                <!-- small cart -->
+                <div class="flex justify-center font-inter">
+                    <div class="absolute -bottom-5 ">
+                        <div class="flex gap-10">
+                            <div class="border-[#1DD100] border-b-4 rounded-2xl px-11 py-5 bg-white">
+                                <div class="flex gap-4 items-center">
+                                    <img src="images/people.png" alt="">
+                                    <div>
+                                        <h1 class="text-4xl font-bold pb-2">500K+</h1>
+                                        <span class="text-gray-500">Registered users</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border-[#1DD100] border-b-4 rounded-2xl px-11 py-5 bg-white">
+                                <div class="flex gap-4 items-center">
+                                    <img src="images/ticket-cupon.png" alt="">
+                                    <div>
+                                        <h1 class="text-4xl font-bold pb-2">1.7 lacks</h1>
+                                        <span class="text-gray-500">Tickets sold</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border-[#1DD100] border-b-4 rounded-2xl px-11 py-5 bg-white">
+                                <div class="flex gap-4 items-center">
+                                    <img src="images/stoppage.png" alt="">
+                                    <div>
+                                        <h1 class="text-4xl font-bold pb-2">80K+</h1>
+                                        <span class="text-gray-500">Rental partners</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -132,7 +136,7 @@
                 Offers</button>
         </section>
         <!-- Ticket selling section -->
-        <section class="bg-[#F7F8F8] border-t-4 border-[#1DD100] rounded-t-3xl pb-40">
+        <section class="bg-[#F7F8F8] border-t-4 border-[#1DD100] rounded-t-3xl pb-20">
             <div class="w-2/3 mx-auto text-center mt-16">
                 <h1 class="font-bold text-5xl mb-2">P.H Paribahan</h1>
                 <p class="text-18px font-inter">Unlock unforgettable experiences with TicketSwift – where every ticket
@@ -144,7 +148,7 @@
                     <!-- ticket -->
                     <div class="bg-white rounded-3xl flex justify-between px-16">
                         <!-- ticket details -->
-                        <div class="pt-7 flex-2 me-10">
+                        <div class="pt-7 flex-3 me-10">
                             <div class="flex justify-between">
                                 <div class="flex">
                                     <img class="object-scale-down block" src="images/bus-logo.png" alt="">
@@ -159,8 +163,8 @@
                                         left</p>
                                 </div>
                             </div>
+                            <!-- route -->
                             <div class="bg-[#F7F8F8] p-5 my-5 rounded-lg pt-5">
-                                <!-- route -->
                                 <div
                                     class="border-b-2 border-[#030712] border-opacity-20 border-dashed flex justify-between items-center">
                                     <p class="py-5">Route</p>
@@ -215,11 +219,10 @@
                     </div>
                     <div class="font-inter">
                         <div class="flex justify-end">
-                            <div class="w-100px bg-gray-100 py-4 rounded-lg text-center">
+                            <div class="w-100px bg-gray-100 py-4 mb-4 rounded-lg text-center">
                                 <img class="inline-block mx-auto" src="images/wheel.png" alt="">
                             </div>
                         </div>
-
                         <!-- Seat -->
                         <div class="flex items-center">
                             <div><span class=" py-4 block text-center me-10 w-50px">A</span></div>
@@ -450,7 +453,8 @@
                     </div>
                     <!-- Ticket and price calculation -->
                     <div class="bg-gray-100 mt-5 rounded-lg p-5">
-                        <div class="flex justify-between pb-2 border-b border-dashed border-gray-300 font-inter font-medium">
+                        <div
+                            class="flex justify-between pb-2 border-b border-dashed border-gray-300 font-inter font-medium">
                             <p>Seat <sup class="px-2 font-bold text-white bg-[#1DD100] rounded-md">2</sup></p>
                             <p>Class</p>
                             <p>Price</p>
@@ -492,22 +496,29 @@
                     <!-- passenger Info -->
                     <div class="mt-10">
                         <form action="">
-                            <label class="text-2xl font-semibold" for="name">Passenger Name <span class="req">*</span></label>
+                            <label class="text-2xl font-semibold" for="name">Passenger Name <span
+                                    class="req">*</span></label>
                             <br>
-                            <input class="outline-none border-2 border-gray-200 mb-5 w-full p-4 rounded-lg mt-3" type="text" id="name" placeholder="Enter Your Name" required>
+                            <input class="outline-none border-2 border-gray-200 mb-5 w-full p-4 rounded-lg mt-3"
+                                type="text" id="name" placeholder="Enter Your Name" required>
                             <br>
-                            <label class="text-2xl font-semibold" for="phoneNumber">Phone Number <span class="req font">*</span></label>
+                            <label class="text-2xl font-semibold" for="phoneNumber">Phone Number <span
+                                    class="req font">*</span></label>
                             <br>
-                            <input class="outline-none border-2 border-gray-200 mb-5 w-full p-4 rounded-lg mt-3" type="number" id="phoneNumber" placeholder="Enter Your Phone number" required>
+                            <input class="outline-none border-2 border-gray-200 mb-5 w-full p-4 rounded-lg mt-3"
+                                type="number" id="phoneNumber" placeholder="Enter Your Phone number" required>
                             <br>
-                            <label class="text-2xl font-semibold" for="email">Email ID <span class="req">*</span></label> 
+                            <label class="text-2xl font-semibold" for="email">Email ID <span
+                                    class="req">*</span></label>
                             <br>
-                            <input class="outline-none border-2 border-gray-200 mb-5 w-full p-4 rounded-lg mt-3" type="email" id="email" placeholder="Enter Your Email ID" required>
-                            
+                            <input class="outline-none border-2 border-gray-200 mb-5 w-full p-4 rounded-lg mt-3"
+                                type="email" id="email" placeholder="Enter Your Email ID" required>
+
                         </form>
                     </div>
                     <div>
-                        <button class="bg-[#1DD100] w-full text-white text-2xl font-bold py-3 rounded-2xl my-2 mb-5">Next</button>
+                        <button
+                            class="bg-[#1DD100] w-full text-white text-2xl font-bold py-3 rounded-2xl my-2 mb-5">Next</button>
                         <div class="flex justify-evenly font-medium">
                             <p class="underline"><a href="#">Terms and Condition</a></p>
                             <p class="underline"><a href="#">Cancellation Policy</a></p>

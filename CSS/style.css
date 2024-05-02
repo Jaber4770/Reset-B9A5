@@ -24,33 +24,37 @@ body {
 }
 
 /* Banner style */
-.banner-img {
+.image-container {
     background-image: url(/images/banner.png);
     background-repeat: no-repeat;
     background-size: 100%;
-}
-
-/* small-cart-box */
-.small-cart-box {
-    bottom: -9%;
-    right: 19%
+    height: 100%;
 }
 
 /* text-18px */
-.text-18px{
+.text-18px {
     font-size: 18px;
 }
+
 /* image-fluide */
-.image-fluide{
+.image-fluide {
     max-width: 100%;
     height: auto;
 }
-.w-100px{
+
+.w-100px {
     width: 150px;
 }
-.me-10px{
+
+.me-10px {
     margin-right: 10px;
 }
-.w-50px{
+
+.w-50px {
     width: 0px;
 }
+
+
+
+
+
