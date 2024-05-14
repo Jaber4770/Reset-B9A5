@@ -20,7 +20,7 @@ for (let i = 0; i < buttons.length; i++) {
 
         }
         else {
-            document.getElementById('alertModal').addEventListener("click", alertModal.showModal()
+            document.getElementById('alertModalForTicket').addEventListener("click", alertModalForTicket.showModal()
             )
 
         }
@@ -39,6 +39,7 @@ cuponText.addEventListener("keyup", function (event) {
     }
     else {
         cuponButton.setAttribute("disabled", "disabled");
+
     }
 });
 
@@ -53,6 +54,14 @@ cuponApplyButton.addEventListener("click", function () {
         let discountPrice = GrandTotal * (12 / 100);
         let afterDiscount = GrandTotal - discountPrice;
         setGrandTotal.innerText = afterDiscount;
+
+        let priceContainer = document.getElementById("discountPrice");
+        let discountedPriceText = document.createElement('p');
+        let discountedPrice = document.createElement('p');
+        discountedPriceText.innerText = "You got discount:";
+        discountedPrice.innerText = discountPrice;
+        priceContainer.appendChild(discountedPriceText);
+        priceContainer.appendChild(discountedPrice);
 
         cuponApplyButton.setAttribute("disabled", "disabled");
         cuponDiv.classList.add("hidden");
@@ -73,4 +82,20 @@ cuponApplyButton.addEventListener("click", function () {
         cuponApplyButton.setAttribute("disabled", "disabled");
         cuponDiv.classList.add("hidden");
     }
+
 })
+
+
+// if Phone number given then next button will be enable.
+let phoneNumber = document.getElementById("phoneNumber");
+phoneNumber.addEventListener("keyup", function (event) {
+    let phoneNumberValue = event.target.value;
+    let nextButton = document.getElementById("nextButtonEnable");
+    if (phoneNumberValue === true && phoneNumberValue === number) {
+        nextButton.removeAttribute("disabled");
+    }
+    else {
+        nextButton.setAttribute("disabled", "disabled");
+
+    }
+});

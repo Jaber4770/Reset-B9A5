@@ -137,7 +137,7 @@
                 Offers</button>
         </section>
         <!-- Ticket selling section -->
-        <section id="ticketBuySection" class="bg-[#F7F8F8] border-t-4 border-[#1DD100] rounded-t-3xl pb-20">
+        <section id="ticketBuySection" class="bg-[#F7F8F8] border-t-4 border-[#1DD100] rounded-t-3xl pb-20 w-90">
             <div class="w-2/3 mx-auto text-center mt-16">
                 <h1 class="font-bold text-5xl mb-2">P.H Paribahan</h1>
                 <p class="text-18px font-inter">Unlock unforgettable experiences with TicketSwift – where every ticket
@@ -181,7 +181,7 @@
                                     <div class="bg-[#030712] bg-opacity-5 rounded-lg py-3 px-5">
                                         <p class="px-5">Boarding Point - Laxmipur</p>
                                     </div>
-                                    <div class="bg-[#030712] bg-opacity-5 rounded-lg p-3 px-5">
+                                    <div class="bg-[#030712] bg-opacity-5 rounded-lg p-3 px-5 mx-2">
                                         <p class="px-5">Dropping Point - Bogura</p>
                                     </div>
                                     <div class="bg-[#030712] bg-opacity-5 rounded-lg p-3 px-5">
@@ -446,8 +446,8 @@
                         </div>
                     </div>
                 </div>
-                <!-- Modal -->
-                <dialog id="alertModal" class="modal modal-bottom sm:modal-middle">
+                <!-- Modal for 5 five ticket selecting-->
+                <dialog id="alertModalForTicket" class="modal modal-bottom sm:modal-middle">
                     <div class="modal-box">
                         <h3 class="font-bold text-lg">Hello! You can not select more 4 Tickets.</h3>
                         <p class="py-4">Press ESC key or click the button below to close</p>
@@ -518,12 +518,10 @@
                             <br>
                             <input class="outline-none border-2 border-gray-200 mb-5 w-full p-4 rounded-lg mt-3"
                                 type="email" id="email" placeholder="Enter Your Email ID" required>
-
                         </form>
                     </div>
                     <div>
-                        <button id="nextButtonEnable" disabled
-                            class="bg-[#1DD100] w-full text-white text-2xl font-bold py-3 rounded-2xl my-2 mb-5">Next</button>
+                        <button id="nextButtonEnable" disabled class="bg-[#1DD100] w-full text-white text-2xl font-bold py-3 rounded-2xl my-2 mb-5">Next</button>
                         <div class="flex justify-evenly font-medium">
                             <p class="underline"><a href="#">Terms and Condition</a></p>
                             <p class="underline"><a href="#">Cancellation Policy</a></p>
