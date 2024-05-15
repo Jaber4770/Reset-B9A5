@@ -137,7 +137,7 @@
                 Offers</button>
         </section>
         <!-- Ticket selling section -->
-        <section id="ticketBuySection" class="bg-[#F7F8F8] border-t-4 border-[#1DD100] rounded-t-3xl pb-20 w-90">
+        <section id="ticketBuySection" class="bg-[#F7F8F8] border-t-4 border-[#1DD100] border_round pb-20 w-90">
             <div class="w-2/3 mx-auto text-center mt-16">
                 <h1 class="font-bold text-5xl mb-2">P.H Paribahan</h1>
                 <p class="text-18px font-inter">Unlock unforgettable experiences with TicketSwift – where every ticket
@@ -522,17 +522,14 @@
                     </div>
                     <!-- buy button -->
                     <div>
-                        <button id="nextButtonEnable" disabled
-                            class="bg-[#1DD100] w-full text-white text-2xl font-bold py-3 rounded-2xl my-2 mb-5">Next</button>
+                        <button disabled id="nextButtonEnable" class="button-disable bg-[#1DD100] w-full text-white text-2xl font-bold py-3 rounded-2xl my-2 mb-5">Next</button>
                         <div class="flex justify-evenly font-medium">
                             <p class="underline"><a href="#">Terms and Condition</a></p>
                             <p class="underline"><a href="#">Cancellation Policy</a></p>
                         </div>
                     </div>
                     <!-- Confirmation Modal -->
-                    <button class="btn" onclick="my_modal_5.showModal()">open modal</button>
-
-                    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                    <dialog id="confirmationModal" class="modal modal-bottom sm:modal-middle">
                         <div class="modal-box text-center">
                             <div class="flex justify-center py-5 mb-5">
                                 <img src="images/success.png" alt="">
@@ -547,7 +544,7 @@
                                 </form>
                             </div>
                         </div>
-                    </dialog>
+                      </dialog>
 
 
                 </div>

@@ -54,9 +54,18 @@ body {
     width: 0px;
 }
 
-.Modal-btn-width{
+/* Modal */
+.Modal-btn-width {
     width: 200px;
 }
 
+/* border */
+.border_round {
+    border-top-left-radius: 6%;
+    border-top-right-radius: 6%;
+}
 
-
+.button-disable {
+    opacity: 0.6;
+    cursor: not-allowed;
+}

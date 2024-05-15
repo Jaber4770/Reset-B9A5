@@ -7,8 +7,9 @@ for (let i = 0; i < buttons.length; i++) {
     let button = buttons[i];
     let clickHandler = function () {
         if (selectButtonCount < 4) {
-            button.style.backgroundColor = 'green';
-            button.style.color = 'white';
+            button.classList.add("bg-green-700");
+            button.classList.add("text-white");
+
             selectButtonCount++;
             button.removeEventListener('click', clickHandler);
             addedTicketOnCart();
@@ -89,13 +90,41 @@ cuponApplyButton.addEventListener("click", function () {
 // if Phone number given then next button will be enable.
 let phoneNumber = document.getElementById("phoneNumber");
 phoneNumber.addEventListener("keyup", function (event) {
-    let phoneNumberValue = event.target.value;
+    let phoneNumberValue = parseInt(event.target.value);
+    let getSeat = document.getElementsByClassName("seat");
     let nextButton = document.getElementById("nextButtonEnable");
-    if (phoneNumberValue === true && phoneNumberValue === number) {
-        nextButton.removeAttribute("disabled");
+
+
+let bgGreeen = null;
+for(seat of getSeat){
+    if(seat.classList.contains("bg-green-700")){
+        bgGreeen = seat;
+        break;
+    }
+}
+
+    if (!isNaN(phoneNumberValue )  && bgGreeen) {
+        nextButton.classList.remove("button-disable");
+        nextButton.removeAttribute("disabled")
+
+        // Ticket purchase Success
+        document.getElementById("nextButtonEnable").addEventListener('click', function () {
+            let confirmationModalShow = document.getElementById("confirmationModal");
+            confirmationModalShow.showModal()
+
+        })
+
     }
     else {
+        nextButton.classList.add("button-disable");
         nextButton.setAttribute("disabled", "disabled");
 
     }
+
 });
+
+
+
+
+
+
